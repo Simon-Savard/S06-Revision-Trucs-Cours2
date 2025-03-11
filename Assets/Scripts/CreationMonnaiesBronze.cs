@@ -8,9 +8,9 @@ public class CreationMonnaiesBronze : MonoBehaviour
 
     void Start()
     {
-        Vector3 _position = transform.position;
-        Quaternion _rotation = Quaternion.Euler(0f, 90f, 0f);
-        Instantiate(_prefabOriginal, _position, _rotation);
+        Vector3 _positionActuelle = transform.position;
+        Quaternion _rotationActuelle = transform.rotation;
+        Instantiate(_prefabOriginal, _positionActuelle, _rotationActuelle);
     }
 
 }
